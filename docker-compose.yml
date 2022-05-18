@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+
+    jabirucms-mysql:
+        image: mysql:8.0
+        # volumes:
+        #    - .docker/data/mysql/b2b:/docker-entrypoint-initdb.d
+        #      - .docker/data/mysql/b2b:/var/lib/mysql
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_ROOT_PASSWORD=
+            - MYSQL_DATABASE=jabiru
+            - MYSQL_USER=jabiru
+            - MYSQL_PASSWORD=secret
+        ports:
+            - 33076:3306
+        restart: always
+        networks:
+            - jabirucms-net
+
+    jabirucms-php:
+        build:
+            context: .
+            dockerfile: .docker/php/Dockerfile
+        container_name: jabirucms-php
+        volumes:
+            - .:/var/www
+        ports:
+            - "8760:80"
+        networks:
+            - jabirucms-net
+
+    jabirucms-redis:
+        image: redis:latest
+        container_name: jabirucms-redis
+        networks:
+            - jabirucms-net
+
+networks:
+    jabirucms-net:
+        name: jabirucms-net
+

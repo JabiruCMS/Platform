@@ -1,0 +1,36 @@
+#!/bin/bash
+
+COMPOSE="/usr/local/bin/docker-compose-1.29"
+#COMPOSE="docker-compose"
+#COMPOSE="docker compose"
+APP_CONTAINER="jabirucms-php"
+
+if [ $# -gt 0 ]; then
+    if [ "$1" == "build" ]; then
+        $COMPOSE up --build
+    elif [ "$1" == "up" ]; then
+        $COMPOSE up
+    elif [ "$1" == "reload" ] || [ "$1" == "restart" ] || [ "$1" == "rs" ] || [ "$1" == "rl" ]; then
+        $COMPOSE down && $COMPOSE up -d
+    elif [ "$1" == "artisan" ] || [ "$1" == "art" ] || [ "$1" == "a" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www && php artisan $@"
+        $COMPOSE exec $APP_CONTAINER bash -c "$EXEC_CMD"
+    elif [ "$1" == "bin/console" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www && php bin/console $@"
+        $COMPOSE exec $APP_CONTAINER bash -c "$EXEC_CMD"
+    elif [ "$1" == "app/console" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www && php app/console $@"
+        $COMPOSE exec $APP_CONTAINER bash -c "$EXEC_CMD"
+    elif [ "$1" == "composer" ]; then
+        shift 1
+        EXEC_CMD="cd /var/www && composer $@"
+        $COMPOSE exec $APP_CONTAINER bash -c "$EXEC_CMD"
+    else
+        $COMPOSE $@
+    fi
+else
+    $COMPOSE ps
+fi
