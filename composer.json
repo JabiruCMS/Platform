@@ -1,15 +1,22 @@
 {
-    "name": "laravel/laravel",
+    "name": "jabirucms/platform",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "description": "JabiruCMS Platform",
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "jabirucms/flatly-theme": "dev-master",
+        "jabirucms/adminlte-theme": "dev-master",
+        "jabirucms/dashboard-module": "dev-master",
+        "jabirucms/tag-module": "dev-master",
+        "jabirucms/translation-module": "dev-master",
+        "jabirucms/workshop-module": "dev-master",
+        "jabirucms/menu-module": "dev-master",
+        "jabirucms/setting-module": "dev-master",
+        "jabirucms/core-module": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -19,11 +26,25 @@
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0"
     },
+    "repositories": [
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Flatly.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/AdminLTE.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Dashboard.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Tag.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Translation.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Workshop.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Menu.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/laravel-menus.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Setting.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Core.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/stylist.git"}
+    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Modules\\": "Modules/"
         }
     },
     "autoload-dev": {
@@ -54,7 +75,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

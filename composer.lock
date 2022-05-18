@@ -4,8 +4,99 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abc7822bd9f28e9a62986817bf04f76",
+    "content-hash": "622c71ee74aeff7a721a44c7ba82ff36",
     "packages": [
+        {
+            "name": "astrotomic/laravel-translatable",
+            "version": "v11.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Astrotomic/laravel-translatable.git",
+                "reference": "6f2e3855836d46ab7ad3dabd269a400404f8b42c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Astrotomic/laravel-translatable/zipball/6f2e3855836d46ab7ad3dabd269a400404f8b42c",
+                "reference": "6f2e3855836d46ab7ad3dabd269a400404f8b42c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0 || ^9.0",
+                "illuminate/database": "^8.0 || ^9.0",
+                "illuminate/support": "^8.0 || ^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.0.4",
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench": "^6.0 || ^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Astrotomic\\Translatable\\TranslatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Astrotomic\\Translatable\\": "src/Translatable/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Witkowski",
+                    "email": "gummibeer@astrotomic.info",
+                    "homepage": "https://gummibeer.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dimitrios Savvopoulos",
+                    "email": "ds@dimsav.com",
+                    "homepage": "http://dimsav.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package for multilingual models",
+            "homepage": "https://astrotomic.info",
+            "keywords": [
+                "database",
+                "language",
+                "laravel",
+                "translation"
+            ],
+            "support": {
+                "docs": "https://docs.astrotomic.info/laravel-translatable",
+                "email": "dev@astrotomic.info",
+                "issues": "https://github.com/Astrotomic/laravel-translatable/issues",
+                "source": "https://github.com/Astrotomic/laravel-translatable"
+            },
+            "funding": [
+                {
+                    "url": "https://forest.astrotomic.info",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Gummibeer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/SarahSibert",
+                    "type": "github"
+                },
+                {
+                    "url": "https://issuehunt.io/r/astrotomic",
+                    "type": "issuehunt"
+                }
+            ],
+            "time": "2022-02-05T10:42:52+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.9.3",
@@ -65,6 +156,157 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.12.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-13T08:19:44+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -140,6 +382,351 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.1"
             },
             "time": "2021-08-13T13:06:58+00:00"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "331b4d5dbaeab3827976273e9356b3b453c300ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/331b4d5dbaeab3827976273e9356b3b453c300ce",
+                "reference": "331b4d5dbaeab3827976273e9356b3b453c300ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1 || ^8.0"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "cache/integration-tests": "dev-master",
+                "doctrine/coding-standard": "^8.0",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "predis/predis": "~1.0",
+                "psr/cache": "^1.0 || ^2.0 || ^3.0",
+                "symfony/cache": "^4.4 || ^5.2 || ^6.0@dev",
+                "symfony/var-exporter": "^4.4 || ^5.2 || ^6.0@dev"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Cache library is a popular cache implementation that supports many different drivers such as redis, memcache, apc, mongodb and others.",
+            "homepage": "https://www.doctrine-project.org/projects/cache.html",
+            "keywords": [
+                "abstraction",
+                "apcu",
+                "cache",
+                "caching",
+                "couchdb",
+                "memcached",
+                "php",
+                "redis",
+                "xcache"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/cache/issues",
+                "source": "https://github.com/doctrine/cache/tree/2.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-17T14:49:29+00:00"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "2.13.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "c480849ca3ad6706a39c970cdfe6888fa8a058b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c480849ca3ad6706a39c970cdfe6888fa8a058b8",
+                "reference": "c480849ca3ad6706a39c970cdfe6888fa8a058b8",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/cache": "^1.0|^2.0",
+                "doctrine/deprecations": "^0.5.3|^1",
+                "doctrine/event-manager": "^1.0",
+                "ext-pdo": "*",
+                "php": "^7.1 || ^8"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "9.0.0",
+                "jetbrains/phpstorm-stubs": "2021.1",
+                "phpstan/phpstan": "1.4.6",
+                "phpunit/phpunit": "^7.5.20|^8.5|9.5.16",
+                "psalm/plugin-phpunit": "0.16.1",
+                "squizlabs/php_codesniffer": "3.6.2",
+                "symfony/cache": "^4.4",
+                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
+                "vimeo/psalm": "4.22.0"
+            },
+            "suggest": {
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
+            },
+            "bin": [
+                "bin/doctrine-dbal"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
+            "homepage": "https://www.doctrine-project.org/projects/dbal.html",
+            "keywords": [
+                "abstraction",
+                "database",
+                "db2",
+                "dbal",
+                "mariadb",
+                "mssql",
+                "mysql",
+                "oci8",
+                "oracle",
+                "pdo",
+                "pgsql",
+                "postgresql",
+                "queryobject",
+                "sasql",
+                "sql",
+                "sqlanywhere",
+                "sqlite",
+                "sqlserver",
+                "sqlsrv"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/dbal/issues",
+                "source": "https://github.com/doctrine/dbal/tree/2.13.9"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdbal",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-02T20:28:55+00:00"
+        },
+        {
+            "name": "doctrine/deprecations",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/deprecations.git",
+                "reference": "0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de",
+                "reference": "0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9",
+                "phpunit/phpunit": "^7.5|^8.5|^9.5",
+                "psr/log": "^1|^2|^3"
+            },
+            "suggest": {
+                "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Deprecations\\": "lib/Doctrine/Deprecations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
+            "homepage": "https://www.doctrine-project.org/",
+            "support": {
+                "issues": "https://github.com/doctrine/deprecations/issues",
+                "source": "https://github.com/doctrine/deprecations/tree/v1.0.0"
+            },
+            "time": "2022-05-02T15:47:09+00:00"
+        },
+        {
+            "name": "doctrine/event-manager",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/event-manager.git",
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "doctrine/common": "<2.9@dev"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\": "lib/Doctrine/Common"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "The Doctrine Event Manager is a simple PHP event system that was built to be used with the various Doctrine projects.",
+            "homepage": "https://www.doctrine-project.org/projects/event-manager.html",
+            "keywords": [
+                "event",
+                "event dispatcher",
+                "event manager",
+                "event system",
+                "events"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/event-manager/issues",
+                "source": "https://github.com/doctrine/event-manager/tree/1.1.x"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fevent-manager",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-29T18:28:51+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -894,17 +1481,709 @@
             "time": "2022-03-20T21:55:58+00:00"
         },
         {
-            "name": "laravel/framework",
-            "version": "v9.11.0",
+            "name": "jabirucms/adminlte-theme",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "598a8c84d452a66b90a3213b1d67189cc726c728"
+                "url": "https://github.com/JabiruCMS/AdminLTE.git",
+                "reference": "226ec1d5fc5170168a38ac7d7e633508c19bd6c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/598a8c84d452a66b90a3213b1d67189cc726c728",
-                "reference": "598a8c84d452a66b90a3213b1d67189cc726c728",
+                "url": "https://api.github.com/repos/JabiruCMS/AdminLTE/zipball/226ec1d5fc5170168a38ac7d7e633508c19bd6c9",
+                "reference": "226ec1d5fc5170168a38ac7d7e633508c19bd6c9",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "default-branch": true,
+            "type": "asgard-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "php artisan stylist:publish"
+                ],
+                "post-update-cmd": [
+                    "php artisan stylist:publish"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An AsgardCMS administration theme",
+            "keywords": [
+                "asgard-cms"
+            ],
+            "support": {
+                "source": "https://github.com/JabiruCMS/AdminLTE/tree/master"
+            },
+            "time": "2022-05-18T06:46:41+00:00"
+        },
+        {
+            "name": "jabirucms/core-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Core.git",
+                "reference": "fcc21d9a37f5d29e95590453e2fd3732afc18d83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Core/zipball/fcc21d9a37f5d29e95590453e2fd3732afc18d83",
+                "reference": "fcc21d9a37f5d29e95590453e2fd3732afc18d83",
+                "shasum": ""
+            },
+            "require": {
+                "astrotomic/laravel-translatable": "^11.9",
+                "composer/installers": "~1.0",
+                "jabirucms/stylist": "dev-master",
+                "laracasts/presenter": "^0.2.4",
+                "laravelcollective/html": "^6.0",
+                "maatwebsite/laravel-sidebar": "^2.4",
+                "mcamara/laravel-localization": "^1.6",
+                "nwidart/laravel-modules": "^9.0",
+                "tightenco/ziggy": "^0.9.4",
+                "yajra/laravel-datatables-oracle": "~9.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "mockery/mockery": "^0.9.4",
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "~7.0"
+            },
+            "suggest": {
+                "asgardcms/notification-module": "Allows notifications to be sent to the user. Optionally real-time notifications."
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Modules\\Core\\": ".",
+                    "Modules\\": "Modules/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The core module for AsgardCMS. This is required for every install.",
+            "keywords": [
+                "asgardcms",
+                "core"
+            ],
+            "support": {
+                "email": "support@asgardcms.com",
+                "issues": "https://github.com/AsgardCms/Platform/issues",
+                "source": "https://github.com/AsgardCms/Core"
+            },
+            "time": "2022-05-18T07:17:32+00:00"
+        },
+        {
+            "name": "jabirucms/dashboard-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Dashboard.git",
+                "reference": "25474402e05c9e97c225109535c1b9468f8cd878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Dashboard/zipball/25474402e05c9e97c225109535c1b9468f8cd878",
+                "reference": "25474402e05c9e97c225109535c1b9468f8cd878",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12"
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dashboard module for AsgardCMS. Handles the display of the dashboard.",
+            "keywords": [
+                "asgardcms",
+                "dashboard"
+            ],
+            "support": {
+                "email": "support@asgardcms.com",
+                "issues": "https://github.com/AsgardCms/Dashboard/issues",
+                "source": "https://github.com/AsgardCms/Dashboard"
+            },
+            "time": "2022-05-18T06:48:42+00:00"
+        },
+        {
+            "name": "jabirucms/flatly-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Flatly.git",
+                "reference": "c58674a7ba4c31cf8ec14c2552721cf4e3ec3a9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Flatly/zipball/c58674a7ba4c31cf8ec14c2552721cf4e3ec3a9e",
+                "reference": "c58674a7ba4c31cf8ec14c2552721cf4e3ec3a9e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "default-branch": true,
+            "type": "asgard-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "php artisan stylist:publish"
+                ],
+                "post-update-cmd": [
+                    "php artisan stylist:publish"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An AsgardCMS Flatly bootswatch theme",
+            "keywords": [
+                "asgard-cms"
+            ],
+            "support": {
+                "source": "https://github.com/JabiruCMS/Flatly/tree/master"
+            },
+            "time": "2022-05-18T06:43:45+00:00"
+        },
+        {
+            "name": "jabirucms/laravel-menus",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/laravel-menus.git",
+                "reference": "f35007583212ba1a32120d817fbf0f7a870ce522"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/laravel-menus/zipball/f35007583212ba1a32120d817fbf0f7a870ce522",
+                "reference": "f35007583212ba1a32120d817fbf0f7a870ce522",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": ">=8.0",
+                "illuminate/support": ">=8.0",
+                "illuminate/view": ">=8.0",
+                "laravelcollective/html": ">=6",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "mockery/mockery": "~1.0",
+                "orchestra/testbench": "^6.2",
+                "phpunit/phpunit": "^8.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Nwidart\\Menus\\MenusServiceProvider"
+                    ],
+                    "aliases": {
+                        "Menu": "Nwidart\\Menus\\Facades\\Menu"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nwidart\\Menus\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Nwidart\\Menus\\Tests\\": "Tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com"
+                },
+                {
+                    "name": "Pingpong Labs",
+                    "email": "pingpong.labs@gmail.com"
+                }
+            ],
+            "description": "Laravel Menu management",
+            "keywords": [
+                "bootstrap",
+                "laravel",
+                "menus",
+                "nav",
+                "navigation"
+            ],
+            "support": {
+                "source": "https://github.com/JabiruCMS/laravel-menus/tree/master"
+            },
+            "time": "2022-05-18T06:59:26+00:00"
+        },
+        {
+            "name": "jabirucms/menu-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Menu.git",
+                "reference": "27c3000f3dd99d6da78dfce0f2edb42b047d29bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Menu/zipball/27c3000f3dd99d6da78dfce0f2edb42b047d29bd",
+                "reference": "27c3000f3dd99d6da78dfce0f2edb42b047d29bd",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "jabirucms/laravel-menus": "dev-master",
+                "typicms/nestablecollection": "^1.1"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.11",
+                "fzaninotto/faker": "1.4.0",
+                "idavoll/page-module": "4.0.x-dev",
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "~7.0"
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Modules\\Menu\\": ".",
+                    "Modules\\": "Modules/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Menu module for AsgardCMS. Handles all the menus.",
+            "keywords": [
+                "asgardcms",
+                "menu",
+                "nested sets",
+                "tree"
+            ],
+            "support": {
+                "email": "support@asgardcms.com",
+                "issues": "https://github.com/AsgardCms/Menu/issues",
+                "source": "https://github.com/AsgardCms/Menu"
+            },
+            "time": "2022-05-18T07:01:35+00:00"
+        },
+        {
+            "name": "jabirucms/setting-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Setting.git",
+                "reference": "6b4da940279c4b0a304bfd850d44ae5c06782212"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Setting/zipball/6b4da940279c4b0a304bfd850d44ae5c06782212",
+                "reference": "6b4da940279c4b0a304bfd850d44ae5c06782212",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "doctrine/dbal": "^2.11"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "~7.0"
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Modules\\Setting\\": ".",
+                    "Modules\\": "Modules/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Setting module for AsgardCMS. Handles all the site settings.",
+            "keywords": [
+                "asgardcms",
+                "settings"
+            ],
+            "support": {
+                "email": "support@asgardcms.com",
+                "issues": "https://github.com/AsgardCms/Platform/issues",
+                "source": "https://github.com/AsgardCms/Setting"
+            },
+            "time": "2022-05-18T07:03:55+00:00"
+        },
+        {
+            "name": "jabirucms/stylist",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/stylist.git",
+                "reference": "17b0dae1f751591818189f9d006050c94fe0f037"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/stylist/zipball/17b0dae1f751591818189f9d006050c94fe0f037",
+                "reference": "17b0dae1f751591818189f9d006050c94fe0f037",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "laravel/framework": "^6.0|^7.0|^8.0|^9.0",
+                "laravelcollective/html": "^6.0|^7.0|^9.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FloatingPoint\\Stylist\\": "src/Stylist",
+                    "Tests\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Kirk Bushell",
+                    "email": "torm3nt@gmail.com"
+                },
+                {
+                    "name": "Mike Dugan",
+                    "email": "mike@mjdugan.com"
+                }
+            ],
+            "description": "Laravel 5,6,7,8,9 theming package.",
+            "support": {
+                "source": "https://github.com/JabiruCMS/stylist/tree/master"
+            },
+            "time": "2022-05-18T07:16:46+00:00"
+        },
+        {
+            "name": "jabirucms/tag-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Tag.git",
+                "reference": "23265eaf5cd95128072b7bdf58cc2c35580fd23f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Tag/zipball/23265eaf5cd95128072b7bdf58cc2c35580fd23f",
+                "reference": "23265eaf5cd95128072b7bdf58cc2c35580fd23f",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "idavoll/page-module": "4.0.x-dev",
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "~7.0"
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Tag\\": ""
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Modules\\Tag\\": ".",
+                    "Modules\\": "Modules/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com"
+                }
+            ],
+            "description": "Tag management in AsgardCMS",
+            "keywords": [
+                "asgardcms",
+                "taggable",
+                "tags"
+            ],
+            "support": {
+                "source": "https://github.com/JabiruCMS/Tag/tree/master"
+            },
+            "time": "2022-05-18T06:50:49+00:00"
+        },
+        {
+            "name": "jabirucms/translation-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Translation.git",
+                "reference": "86d07e7c0a9191995d7454ddee6941ff6b9de2e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Translation/zipball/86d07e7c0a9191995d7454ddee6941ff6b9de2e2",
+                "reference": "86d07e7c0a9191995d7454ddee6941ff6b9de2e2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "league/csv": "~7.2.0",
+                "venturecraft/revisionable": "^1.35"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "~7.0"
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Translation\\": ""
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Modules\\Translation\\": ".",
+                    "Modules\\": "Modules/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com"
+                }
+            ],
+            "description": "Module containing all AsgardCms translations",
+            "support": {
+                "source": "https://github.com/JabiruCMS/Translation/tree/master"
+            },
+            "time": "2022-05-18T06:52:05+00:00"
+        },
+        {
+            "name": "jabirucms/workshop-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JabiruCMS/Workshop.git",
+                "reference": "b330068685030f7e6ae3ee511623871fb6176b4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JabiruCMS/Workshop/zipball/b330068685030f7e6ae3ee511623871fb6176b4f",
+                "reference": "b330068685030f7e6ae3ee511623871fb6176b4f",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "symfony/yaml": "^5.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "~7.0",
+                "spatie/phpunit-snapshot-assertions": "^1.0"
+            },
+            "default-branch": true,
+            "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Modules\\Workshop\\": ".",
+                    "Modules\\": "Modules/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Workshop module for AsgardCMS. Handles the activation of modules.",
+            "keywords": [
+                "asgardcms",
+                "modules",
+                "workshop"
+            ],
+            "support": {
+                "email": "support@asgardcms.com",
+                "issues": "https://github.com/AsgardCms/Platform/issues",
+                "source": "https://github.com/AsgardCms/Workshop"
+            },
+            "time": "2022-05-18T06:53:24+00:00"
+        },
+        {
+            "name": "laracasts/presenter",
+            "version": "0.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/Presenter.git",
+                "reference": "d9b9050abf0af1d75465284a62b537c3f4ac7d1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/Presenter/zipball/d9b9050abf0af1d75465284a62b537c3f4ac7d1f",
+                "reference": "d9b9050abf0af1d75465284a62b537c3f4ac7d1f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0|~6.0|~7.0|~8.0|^9.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Laracasts\\Presenter": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Simple view presenters",
+            "keywords": [
+                "laravel",
+                "presenter",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/laracasts/Presenter/issues",
+                "source": "https://github.com/laracasts/Presenter/tree/0.2.5"
+            },
+            "time": "2022-04-12T18:22:42+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v9.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "87b6cc8bc41d1cf85c7c1401cddde8570a3b95bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/87b6cc8bc41d1cf85c7c1401cddde8570a3b95bb",
+                "reference": "87b6cc8bc41d1cf85c7c1401cddde8570a3b95bb",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +2349,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-05-03T14:47:20+00:00"
+            "time": "2022-05-17T14:07:43+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1139,16 +2418,16 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "9e4b005daa20b0c161f3845040046dc9ddc1d74e"
+                "reference": "09f0e9fb61829f628205b7c94906c28740ff9540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/9e4b005daa20b0c161f3845040046dc9ddc1d74e",
-                "reference": "9e4b005daa20b0c161f3845040046dc9ddc1d74e",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/09f0e9fb61829f628205b7c94906c28740ff9540",
+                "reference": "09f0e9fb61829f628205b7c94906c28740ff9540",
                 "shasum": ""
             },
             "require": {
@@ -1194,7 +2473,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2022-02-11T19:23:53+00:00"
+            "time": "2022-05-16T17:09:47+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1265,17 +2544,89 @@
             "time": "2022-03-23T12:38:24+00:00"
         },
         {
-            "name": "league/commonmark",
-            "version": "2.3.0",
+            "name": "laravelcollective/html",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "32a49eb2b38fe5e5c417ab748a45d0beaab97955"
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "78c3cb516ac9e6d3d76cad9191f81d217302dea6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/32a49eb2b38fe5e5c417ab748a45d0beaab97955",
-                "reference": "32a49eb2b38fe5e5c417ab748a45d0beaab97955",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/78c3cb516ac9e6d3d76cad9191f81d217302dea6",
+                "reference": "78c3cb516ac9e6d3d76cad9191f81d217302dea6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/routing": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/session": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/view": "^6.0|^7.0|^8.0|^9.0",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "illuminate/database": "^6.0|^7.0|^8.0|^9.0",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~8.5|^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Collective\\Html\\HtmlServiceProvider"
+                    ],
+                    "aliases": {
+                        "Form": "Collective\\Html\\FormFacade",
+                        "Html": "Collective\\Html\\HtmlFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                },
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "https://laravelcollective.com",
+            "support": {
+                "issues": "https://github.com/LaravelCollective/html/issues",
+                "source": "https://github.com/LaravelCollective/html"
+            },
+            "time": "2022-02-08T21:02:54+00:00"
+        },
+        {
+            "name": "league/commonmark",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "cb36fee279f7fca01d5d9399ddd1b37e48e2eca1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/cb36fee279f7fca01d5d9399ddd1b37e48e2eca1",
+                "reference": "cb36fee279f7fca01d5d9399ddd1b37e48e2eca1",
                 "shasum": ""
             },
             "require": {
@@ -1368,7 +2719,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-07T22:37:05+00:00"
+            "time": "2022-05-14T15:37:39+00:00"
         },
         {
             "name": "league/config",
@@ -1451,6 +2802,68 @@
                 }
             ],
             "time": "2021-08-14T12:15:32+00:00"
+        },
+        {
+            "name": "league/csv",
+            "version": "7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/csv.git",
+                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/69bafa6ff924fbf9effe4275d6eb16be81a853ef",
+                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.9",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Csv data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "write"
+            ],
+            "support": {
+                "forum": "https://groups.google.com/forum/#!forum/thephpleague",
+                "issues": "https://github.com/thephpleague/csv/issues",
+                "source": "https://github.com/thephpleague/csv/tree/master"
+            },
+            "time": "2015-11-02T07:36:25+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1599,17 +3012,156 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
-            "name": "monolog/monolog",
+            "name": "maatwebsite/laravel-sidebar",
             "version": "2.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "4192345e260f1d51b365536199744b987e160edc"
+                "url": "https://github.com/SpartnerNL/Laravel-Sidebar.git",
+                "reference": "a46538a20a2ed2f049bb26fc109de647ba51b5c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
-                "reference": "4192345e260f1d51b365536199744b987e160edc",
+                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Sidebar/zipball/a46538a20a2ed2f049bb26fc109de647ba51b5c3",
+                "reference": "a46538a20a2ed2f049bb26fc109de647ba51b5c3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "illuminate/container": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "illuminate/contracts": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "illuminate/routing": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "illuminate/support": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "illuminate/view": "~5.0|~6.0|~7.0|~8.0|~9.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Maatwebsite\\Sidebar\\SidebarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Sidebar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Maatwebsite.nl",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "A sidebar builder for Laravel",
+            "keywords": [
+                "acp",
+                "laravel",
+                "menu",
+                "sidebar"
+            ],
+            "support": {
+                "issues": "https://github.com/SpartnerNL/Laravel-Sidebar/issues",
+                "source": "https://github.com/SpartnerNL/Laravel-Sidebar/tree/2.5.0"
+            },
+            "time": "2022-02-09T20:53:52+00:00"
+        },
+        {
+            "name": "mcamara/laravel-localization",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mcamara/laravel-localization.git",
+                "reference": "27565315c585e90d8d93aa06afd49d6a5992fe5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mcamara/laravel-localization/zipball/27565315c585e90d8d93aa06afd49d6a5992fe5a",
+                "reference": "27565315c585e90d8d93aa06afd49d6a5992fe5a",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.2.0||~5.3.0||~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench-browser-kit": "~3.4|~3.8|~4.0",
+                "phpunit/phpunit": "6.0.*|^8.0"
+            },
+            "suggest": {
+                "ext-intl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mcamara\\LaravelLocalization\\LaravelLocalizationServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelLocalization": "Mcamara\\LaravelLocalization\\Facades\\LaravelLocalization"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mcamara\\LaravelLocalization": "src/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Cámara",
+                    "email": "mcamara88@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easy localization for Laravel",
+            "homepage": "https://github.com/mcamara/laravel-localization",
+            "keywords": [
+                "laravel",
+                "localization",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/mcamara/laravel-localization/issues",
+                "source": "https://github.com/mcamara/laravel-localization/tree/v1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/iwasherefirst2",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/mcamara",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-26T10:27:45+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/247918972acd74356b0a91dfaa5adcaec069b6c0",
+                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0",
                 "shasum": ""
             },
             "require": {
@@ -1622,18 +3174,23 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^7",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
                 "graylog2/gelf-php": "^1.4.2",
+                "guzzlehttp/guzzle": "^7.4",
+                "guzzlehttp/psr7": "^2.2",
                 "mongodb/mongodb": "^1.8",
                 "php-amqplib/php-amqplib": "~2.4 || ^3",
                 "php-console/php-console": "^3.1.3",
-                "phpspec/prophecy": "^1.6.1",
+                "phpspec/prophecy": "^1.15",
                 "phpstan/phpstan": "^0.12.91",
-                "phpunit/phpunit": "^8.5",
+                "phpunit/phpunit": "^8.5.14",
                 "predis/predis": "^1.1",
                 "rollbar/rollbar": "^1.3 || ^2 || ^3",
-                "ruflin/elastica": ">=0.90@dev",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
+                "ruflin/elastica": "^7",
+                "swiftmailer/swiftmailer": "^5.3|^6.0",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -1683,7 +3240,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.5.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.6.0"
             },
             "funding": [
                 {
@@ -1695,7 +3252,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-08T15:43:54+00:00"
+            "time": "2022-05-10T09:36:00+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1996,6 +3553,87 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.2"
             },
             "time": "2021-11-30T19:35:32+00:00"
+        },
+        {
+            "name": "nwidart/laravel-modules",
+            "version": "9.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nWidart/laravel-modules.git",
+                "reference": "5483801843f653df5ffd074da373508f4d3925c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/5483801843f653df5ffd074da373508f4d3925c9",
+                "reference": "5483801843f653df5ffd074da373508f4d3925c9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.6",
+                "laravel/framework": "^9.0",
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/phpunit": "^9.5",
+                "spatie/phpunit-snapshot-assertions": "^4.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nwidart\\Modules\\LaravelModulesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Module": "Nwidart\\Modules\\Facades\\Module"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "9.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Nwidart\\Modules\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com",
+                    "homepage": "https://nicolaswidart.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Module management",
+            "keywords": [
+                "laravel",
+                "module",
+                "modules",
+                "nwidart",
+                "rad"
+            ],
+            "support": {
+                "issues": "https://github.com/nWidart/laravel-modules/issues",
+                "source": "https://github.com/nWidart/laravel-modules/tree/9.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/nwidart",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-28T13:17:36+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -4815,6 +6453,142 @@
             "time": "2022-04-26T13:22:23+00:00"
         },
         {
+            "name": "symfony/yaml",
+            "version": "v5.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "e80f87d2c9495966768310fc531b487ce64237a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e80f87d2c9495966768310fc531b487ce64237a2",
+                "reference": "e80f87d2c9495966768310fc531b487ce64237a2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "symfony/console": "<5.3"
+            },
+            "require-dev": {
+                "symfony/console": "^5.3|^6.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "bin": [
+                "Resources/bin/yaml-lint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Loads and dumps YAML files",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v5.4.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-26T16:32:32+00:00"
+        },
+        {
+            "name": "tightenco/ziggy",
+            "version": "0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tighten/ziggy.git",
+                "reference": "82ea6ec6cb6ab3545b0245310b2a424316fe48d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tighten/ziggy/zipball/82ea6ec6cb6ab3545b0245310b2a424316fe48d8",
+                "reference": "82ea6ec6cb6ab3545b0245310b2a424316fe48d8",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.4@dev"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tightenco\\Ziggy\\ZiggyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tightenco\\Ziggy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Coulbourne",
+                    "email": "daniel@tighten.co"
+                },
+                {
+                    "name": "Jake Bathman",
+                    "email": "jake@tighten.co"
+                }
+            ],
+            "description": "Generates a Blade directive exporting all of your named Laravel routes. Also provides a nice route() helper function in JavaScript.",
+            "homepage": "https://github.com/tightenco/ziggy",
+            "keywords": [
+                "Ziggy",
+                "javascript",
+                "laravel",
+                "routes"
+            ],
+            "support": {
+                "issues": "https://github.com/tighten/ziggy/issues",
+                "source": "https://github.com/tighten/ziggy/tree/0.9.4"
+            },
+            "time": "2020-06-05T14:42:41+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.4",
             "source": {
@@ -4866,6 +6640,126 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.4"
             },
             "time": "2021-12-08T09:12:39+00:00"
+        },
+        {
+            "name": "typicms/nestablecollection",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/NestableCollection.git",
+                "reference": "a93c3f0d0aeec867185d6d66c1bc1da249d6e245"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/a93c3f0d0aeec867185d6d66c1bc1da249d6e245",
+                "reference": "a93c3f0d0aeec867185d6d66c1bc1da249d6e245",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~4.2|~5.0|~6.0|~7.0|~8.0|~9.0",
+                "illuminate/support": "~4.2|~5.0|~6.0|~7.0|~8.0|~9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package that extends Collection to handle unlimited nested items following adjacency list model.",
+            "keywords": [
+                "TypiCMS",
+                "adjacency list",
+                "collection",
+                "eloquent",
+                "laravel",
+                "nested set",
+                "tree"
+            ],
+            "support": {
+                "issues": "https://github.com/TypiCMS/NestableCollection/issues",
+                "source": "https://github.com/TypiCMS/NestableCollection/tree/1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/typicms",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-09T07:57:07+00:00"
+        },
+        {
+            "name": "venturecraft/revisionable",
+            "version": "1.39.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VentureCraft/revisionable.git",
+                "reference": "24ef304dfe7fe64362cc815faab0fc80030d0c59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VentureCraft/revisionable/zipball/24ef304dfe7fe64362cc815faab0fc80030d0c59",
+                "reference": "24ef304dfe7fe64362cc815faab0fc80030d0c59",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4.0|~5.0|~5.1|^6.0|^7.0|^8.0|^9.0",
+                "laravel/framework": "~5.4|^6.0|^7.0|^8.0|^9.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Venturecraft\\Revisionable\\RevisionableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Venturecraft\\Revisionable": "src/"
+                },
+                "classmap": [
+                    "src/migrations"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Duell",
+                    "email": "me@chrisduell.com"
+                }
+            ],
+            "description": "Keep a revision history for your models without thinking, created as a package for use with Laravel",
+            "homepage": "http://github.com/venturecraft/revisionable",
+            "keywords": [
+                "Audit",
+                "ardent",
+                "history",
+                "laravel",
+                "model",
+                "revision"
+            ],
+            "support": {
+                "issues": "https://github.com/VentureCraft/revisionable/issues",
+                "source": "https://github.com/VentureCraft/revisionable"
+            },
+            "time": "2022-01-20T05:56:12+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5078,6 +6972,91 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
+        },
+        {
+            "name": "yajra/laravel-datatables-oracle",
+            "version": "v9.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables.git",
+                "reference": "4c22b09c8c664df5aad9f17d99c3823c0f2d84e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/4c22b09c8c664df5aad9f17d99c3823c0f2d84e2",
+                "reference": "4c22b09c8c664df5aad9f17d99c3823c0f2d84e2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.8.*|^6|^7|^8|^9",
+                "illuminate/filesystem": "5.8.*|^6|^7|^8|^9",
+                "illuminate/http": "5.8.*|^6|^7|^8|^9",
+                "illuminate/support": "5.8.*|^6|^7|^8|^9",
+                "illuminate/view": "5.8.*|^6|^7|^8|^9",
+                "php": "^7.1.3|^8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0|^7.0"
+            },
+            "suggest": {
+                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+                "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
+                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\DataTablesServiceProvider"
+                    ],
+                    "aliases": {
+                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "jQuery DataTables API for Laravel 5|6|7|8|9",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/yajra/laravel-datatables/issues",
+                "source": "https://github.com/yajra/laravel-datatables/tree/v9.20.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yajra",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/yajra",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-05-08T16:04:16+00:00"
         }
     ],
     "packages-dev": [
@@ -5395,16 +7374,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.14.1",
+            "version": "v1.14.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "9a7348dedfccc894718a21f71c09d669747e3f33"
+                "reference": "1da083e30e6b0d646535c0afc2afeffdccb7181d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/9a7348dedfccc894718a21f71c09d669747e3f33",
-                "reference": "9a7348dedfccc894718a21f71c09d669747e3f33",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/1da083e30e6b0d646535c0afc2afeffdccb7181d",
+                "reference": "1da083e30e6b0d646535c0afc2afeffdccb7181d",
                 "shasum": ""
             },
             "require": {
@@ -5451,7 +7430,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2022-05-02T13:58:40+00:00"
+            "time": "2022-05-16T18:13:03+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7458,16 +9437,16 @@
         },
         {
             "name": "spatie/flare-client-php",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/flare-client-php.git",
-                "reference": "ceab058852a1278d9f57a7b95f1c348e4956d866"
+                "reference": "86a380f5b1ce839af04a08f1c8f2697184cdf23f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/ceab058852a1278d9f57a7b95f1c348e4956d866",
-                "reference": "ceab058852a1278d9f57a7b95f1c348e4956d866",
+                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/86a380f5b1ce839af04a08f1c8f2697184cdf23f",
+                "reference": "86a380f5b1ce839af04a08f1c8f2697184cdf23f",
                 "shasum": ""
             },
             "require": {
@@ -7488,6 +9467,11 @@
                 "spatie/phpunit-snapshot-assertions": "^4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1.x-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "src/helpers.php"
@@ -7510,7 +9494,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flare-client-php/issues",
-                "source": "https://github.com/spatie/flare-client-php/tree/1.1.0"
+                "source": "https://github.com/spatie/flare-client-php/tree/1.2.0"
             },
             "funding": [
                 {
@@ -7518,20 +9502,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-11T13:21:28+00:00"
+            "time": "2022-05-16T12:13:39+00:00"
         },
         {
             "name": "spatie/ignition",
-            "version": "1.2.9",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ignition.git",
-                "reference": "db25202fab2d5c14613b8914a1bb374998bbf870"
+                "reference": "997363fbcce809b1e55f571997d49017f9c623d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/db25202fab2d5c14613b8914a1bb374998bbf870",
-                "reference": "db25202fab2d5c14613b8914a1bb374998bbf870",
+                "url": "https://api.github.com/repos/spatie/ignition/zipball/997363fbcce809b1e55f571997d49017f9c623d9",
+                "reference": "997363fbcce809b1e55f571997d49017f9c623d9",
                 "shasum": ""
             },
             "require": {
@@ -7552,6 +9536,11 @@
                 "symfony/process": "^5.4|^6.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Spatie\\Ignition\\": "src"
@@ -7588,7 +9577,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-23T20:37:21+00:00"
+            "time": "2022-05-16T13:16:07+00:00"
         },
         {
             "name": "spatie/laravel-ignition",
@@ -7733,7 +9722,17 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jabirucms/flatly-theme": 20,
+        "jabirucms/adminlte-theme": 20,
+        "jabirucms/dashboard-module": 20,
+        "jabirucms/tag-module": 20,
+        "jabirucms/translation-module": 20,
+        "jabirucms/workshop-module": 20,
+        "jabirucms/menu-module": 20,
+        "jabirucms/setting-module": 20,
+        "jabirucms/core-module": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
