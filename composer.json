@@ -16,7 +16,11 @@
         "jabirucms/workshop-module": "dev-master",
         "jabirucms/menu-module": "dev-master",
         "jabirucms/setting-module": "dev-master",
-        "jabirucms/core-module": "dev-master"
+        "jabirucms/core-module": "dev-master",
+        "jabirucms/user-module": "dev-master",
+        "cartalyst/sentinel": "^6.0",
+        "jabirucms/page-module": "dev-master",
+        "jabirucms/media-module": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -37,7 +41,10 @@
         {"type": "vcs", "url": "git@github.com:JabiruCMS/laravel-menus.git"},
         {"type": "vcs", "url": "git@github.com:JabiruCMS/Setting.git"},
         {"type": "vcs", "url": "git@github.com:JabiruCMS/Core.git"},
-        {"type": "vcs", "url": "git@github.com:JabiruCMS/stylist.git"}
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/stylist.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/User.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Page.git"},
+        {"type": "vcs", "url": "git@github.com:JabiruCMS/Media.git"}
     ],
     "autoload": {
         "psr-4": {
