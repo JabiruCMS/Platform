@@ -88,6 +88,11 @@ return [
             'endpoint' => env('DYNAMODB_ENDPOINT'),
         ],
 
+        'translations' => [
+            'driver' => env('TRANSLATIONS_CACHE_DRIVER', 'file'),
+            'path' => storage_path('framework/cache/data/translations'),
+        ],
+
         'octane' => [
             'driver' => 'octane',
         ],
