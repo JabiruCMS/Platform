@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffdaf4f1765374ef6f0535223e5c8f76",
+    "content-hash": "beac96356a8be3da290530e5a8742aae",
     "packages": [
         {
             "name": "asgardcms/blog-module",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BocianCZ/Blog.git",
-                "reference": "a545359322ef4eb1e029e5292fdbe046c5860403"
+                "reference": "24d15e2dea09bfa9582604f4d640f5068d349277"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BocianCZ/Blog/zipball/a545359322ef4eb1e029e5292fdbe046c5860403",
-                "reference": "a545359322ef4eb1e029e5292fdbe046c5860403",
+                "url": "https://api.github.com/repos/BocianCZ/Blog/zipball/24d15e2dea09bfa9582604f4d640f5068d349277",
+                "reference": "24d15e2dea09bfa9582604f4d640f5068d349277",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "issues": "https://github.com/AsgardCms/Blog/issues",
                 "source": "https://github.com/AsgardCms/Blog"
             },
-            "time": "2022-06-21T02:30:05+00:00"
+            "time": "2022-06-21T16:21:38+00:00"
         },
         {
             "name": "astrotomic/laravel-translatable",
@@ -150,12 +150,90 @@
             "time": "2022-02-05T10:42:52+00:00"
         },
         {
+            "name": "barryvdh/laravel-snappy",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-snappy.git",
+                "reference": "2c18a3602981bc6f25b32908cf8aaa05952ab2f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-snappy/zipball/2c18a3602981bc6f25b32908cf8aaa05952ab2f7",
+                "reference": "2c18a3602981bc6f25b32908cf8aaa05952ab2f7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^6|^7|^8|^9",
+                "illuminate/support": "^6|^7|^8|^9",
+                "knplabs/knp-snappy": "^1",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4|^5|^6|^7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Snappy\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "PDF": "Barryvdh\\Snappy\\Facades\\SnappyPdf",
+                        "SnappyImage": "Barryvdh\\Snappy\\Facades\\SnappyImage"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Snappy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Snappy PDF/Image for Laravel",
+            "keywords": [
+                "image",
+                "laravel",
+                "pdf",
+                "snappy",
+                "wkhtmltoimage",
+                "wkhtmltopdf"
+            ],
+            "support": {
+                "issues": "https://github.com/barryvdh/laravel-snappy/issues",
+                "source": "https://github.com/barryvdh/laravel-snappy/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://fruitcake.nl",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-29T19:36:49+00:00"
+        },
+        {
             "name": "bociancz/bocian-module",
             "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:bociancz/bocian-module.git",
-                "reference": "81add92c2af528682c7a64564bd55676102adafb"
+                "reference": "197a3c07e0816f81addbd341620938b2fbff9c79"
             },
             "require": {
                 "php": ">=7.0"
@@ -172,7 +250,7 @@
                 }
             ],
             "description": "Custom functions and helpers for AsgardCMS/JabiruCMS",
-            "time": "2022-06-21T02:30:58+00:00"
+            "time": "2022-06-21T16:21:19+00:00"
         },
         {
             "name": "bociancz/catalog-module",
@@ -217,7 +295,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:bociancz/eshop-module.git",
-                "reference": "4cd93beeb898057816522a06decef47fe5b6132e"
+                "reference": "f416c8ed60da900d113797938bdc0065f2d2567c"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -246,20 +324,20 @@
                     "email": "info@bocian.cz"
                 }
             ],
-            "time": "2022-06-21T02:33:09+00:00"
+            "time": "2022-06-21T16:11:47+00:00"
         },
         {
             "name": "bociancz/gallery-module",
-            "version": "dev-master",
+            "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BocianCZ/gallery-module.git",
-                "reference": "ec6535dbcdbe22d35748d59499e8db04f28b33d4"
+                "reference": "5cb1092ed459f871ddbe180a2e0b9cda49dbeb82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BocianCZ/gallery-module/zipball/ec6535dbcdbe22d35748d59499e8db04f28b33d4",
-                "reference": "ec6535dbcdbe22d35748d59499e8db04f28b33d4",
+                "url": "https://api.github.com/repos/BocianCZ/gallery-module/zipball/5cb1092ed459f871ddbe180a2e0b9cda49dbeb82",
+                "reference": "5cb1092ed459f871ddbe180a2e0b9cda49dbeb82",
                 "shasum": ""
             },
             "require": {
@@ -272,7 +350,6 @@
                 "phpro/grumphp": "^0.9.1",
                 "phpunit/phpunit": "~5.7"
             },
-            "default-branch": true,
             "type": "asgard-module",
             "autoload": {
                 "psr-4": {
@@ -296,9 +373,9 @@
             ],
             "support": {
                 "issues": "https://github.com/BocianCZ/gallery-module/issues",
-                "source": "https://github.com/BocianCZ/gallery-module/tree/v3.0.1"
+                "source": "https://github.com/BocianCZ/gallery-module/tree/4.0"
             },
-            "time": "2019-02-20T21:35:21+00:00"
+            "time": "2022-06-21T02:34:02+00:00"
         },
         {
             "name": "bociancz/postal-module",
@@ -2992,6 +3069,80 @@
             "time": "2022-05-18T06:53:24+00:00"
         },
         {
+            "name": "knplabs/knp-snappy",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/snappy.git",
+                "reference": "5126fb5b335ec929a226314d40cd8dad497c3d67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/snappy/zipball/5126fb5b335ec929a226314d40cd8dad497c3d67",
+                "reference": "5126fb5b335ec929a226314d40cd8dad497c3d67",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "psr/log": "^1.0||^2.0||^3.0",
+                "symfony/process": "~3.4||~4.3||~5.0||~6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16||^3.0",
+                "pedrotroller/php-cs-custom-fixer": "^2.19",
+                "phpstan/phpstan": "^0.12.7",
+                "phpstan/phpstan-phpunit": "^0.12.6",
+                "phpunit/phpunit": "~7.4||~8.5"
+            },
+            "suggest": {
+                "h4cc/wkhtmltoimage-amd64": "Provides wkhtmltoimage-amd64 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltoimage-i386": "Provides wkhtmltoimage-i386 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltopdf-amd64": "Provides wkhtmltopdf-amd64 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltopdf-i386": "Provides wkhtmltopdf-i386 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "wemersonjanuario/wkhtmltopdf-windows": "Provides wkhtmltopdf executable for Windows, use version `~0.12` as dependency"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Snappy\\": "src/Knp/Snappy"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KNP Labs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/snappy/contributors"
+                }
+            ],
+            "description": "PHP library allowing thumbnail, snapshot or PDF generation from a url or a html page. Wrapper for wkhtmltopdf/wkhtmltoimage.",
+            "homepage": "http://github.com/KnpLabs/snappy",
+            "keywords": [
+                "knp",
+                "knplabs",
+                "pdf",
+                "snapshot",
+                "thumbnail",
+                "wkhtmltopdf"
+            ],
+            "support": {
+                "issues": "https://github.com/KnpLabs/snappy/issues",
+                "source": "https://github.com/KnpLabs/snappy/tree/v1.4.1"
+            },
+            "time": "2022-01-07T13:03:38+00:00"
+        },
+        {
             "name": "laracasts/flash",
             "version": "3.2.1",
             "source": {
@@ -3101,16 +3252,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.17.0",
+            "version": "v9.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "091e287678ac723c591509ca6374e4ded4a99b1c"
+                "reference": "93a1296bca43c1ca8dcb5df8f97107e819a71499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/091e287678ac723c591509ca6374e4ded4a99b1c",
-                "reference": "091e287678ac723c591509ca6374e4ded4a99b1c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/93a1296bca43c1ca8dcb5df8f97107e819a71499",
+                "reference": "93a1296bca43c1ca8dcb5df8f97107e819a71499",
                 "shasum": ""
             },
             "require": {
@@ -3122,7 +3273,7 @@
                 "fruitcake/php-cors": "^1.2",
                 "laravel/serializable-closure": "^1.0",
                 "league/commonmark": "^2.2",
-                "league/flysystem": "^3.0",
+                "league/flysystem": "^3.0.16",
                 "monolog/monolog": "^2.0",
                 "nesbot/carbon": "^2.53.1",
                 "php": "^8.0.2",
@@ -3198,7 +3349,7 @@
                 "pda/pheanstalk": "^4.0",
                 "phpstan/phpstan": "^1.4.7",
                 "phpunit/phpunit": "^9.5.8",
-                "predis/predis": "^1.1.9",
+                "predis/predis": "^1.1.9|^2.0",
                 "symfony/cache": "^6.0"
             },
             "suggest": {
@@ -3224,7 +3375,7 @@
                 "nyholm/psr7": "Required to use PSR-7 bridging features (^1.2).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
                 "phpunit/phpunit": "Required to use assertions and run tests (^9.5.8).",
-                "predis/predis": "Required to use the predis connector (^1.1.9).",
+                "predis/predis": "Required to use the predis connector (^1.1.9|^2.0).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0).",
                 "symfony/cache": "Required to PSR-6 cache bridge (^6.0).",
@@ -3276,7 +3427,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-06-07T15:09:32+00:00"
+            "time": "2022-06-21T14:40:11+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -7859,16 +8010,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v9.20.0",
+            "version": "v9.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "4c22b09c8c664df5aad9f17d99c3823c0f2d84e2"
+                "reference": "b8e6663990c3eda7c1c66f4add4f86109cb159cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/4c22b09c8c664df5aad9f17d99c3823c0f2d84e2",
-                "reference": "4c22b09c8c664df5aad9f17d99c3823c0f2d84e2",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/b8e6663990c3eda7c1c66f4add4f86109cb159cb",
+                "reference": "b8e6663990c3eda7c1c66f4add4f86109cb159cb",
                 "shasum": ""
             },
             "require": {
@@ -7928,7 +8079,7 @@
             ],
             "support": {
                 "issues": "https://github.com/yajra/laravel-datatables/issues",
-                "source": "https://github.com/yajra/laravel-datatables/tree/v9.20.0"
+                "source": "https://github.com/yajra/laravel-datatables/tree/v9.21.0"
             },
             "funding": [
                 {
@@ -7940,7 +8091,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-05-08T16:04:16+00:00"
+            "time": "2022-06-21T13:31:43+00:00"
         }
     ],
     "packages-dev": [
@@ -8343,16 +8494,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.14.10",
+            "version": "v1.14.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "0ea5d683af4d189071efcdb9e83946c10dab82c3"
+                "reference": "6edf45a247b3688e0d07e149570a62fd9bc11c73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/0ea5d683af4d189071efcdb9e83946c10dab82c3",
-                "reference": "0ea5d683af4d189071efcdb9e83946c10dab82c3",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/6edf45a247b3688e0d07e149570a62fd9bc11c73",
+                "reference": "6edf45a247b3688e0d07e149570a62fd9bc11c73",
                 "shasum": ""
             },
             "require": {
@@ -8399,7 +8550,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2022-06-09T07:10:28+00:00"
+            "time": "2022-06-13T18:32:48+00:00"
         },
         {
             "name": "maximebf/debugbar",
