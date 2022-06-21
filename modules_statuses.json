@@ -8,5 +8,12 @@
     "Tag": true,
     "Translation": true,
     "User": true,
-    "Workshop": true
+    "Workshop": true,
+    "Bocian": true,
+    "Catalog": true,
+    "Eshop": true,
+    "Gallery": true,
+    "Slider": true,
+    "Stock": true,
+    "Blog": true
 }

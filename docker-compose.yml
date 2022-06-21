@@ -25,6 +25,7 @@ services:
         container_name: jabirucms-php
         volumes:
             - .:/var/www
+            - ~/.ssh:/root/.ssh
         ports:
             - "8760:80"
         networks:
@@ -33,6 +34,14 @@ services:
     jabirucms-redis:
         image: redis:latest
         container_name: jabirucms-redis
+        networks:
+            - jabirucms-net
+
+    jabirucms-mail:
+        image: mailhog/mailhog
+        container_name: jabirucms-mail
+        ports:
+            - 8761:8025
         networks:
             - jabirucms-net
 
