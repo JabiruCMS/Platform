@@ -4,6 +4,13 @@ if (mix.inProduction()) {
     mix.sourceMaps().disableNotifications().version();
 }
 
+require('laravel-mix-alias');
+mix.alias({
+    '@Bocian': '/Modules/Bocian/Resources/js',
+    '@BocianMedia': '/Modules/Bocian/Resources/js/_Media',
+    '@Core': '/Modules/Core/Assets/js',
+});
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -16,5 +23,5 @@ if (mix.inProduction()) {
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .extract()
+    // .extract()
     .sass('resources/sass/app.scss', 'public/css');
