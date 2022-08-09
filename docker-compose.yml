@@ -1,51 +1,50 @@
 version: '3.8'
 services:
 
-    jabirucms-mysql:
+    gottstein-mysql:
         image: mysql:8.0
-        # volumes:
-        #    - .docker/data/mysql/b2b:/docker-entrypoint-initdb.d
-        #      - .docker/data/mysql/b2b:/var/lib/mysql
+        volumes:
+            - .docker/data/mysql:/var/lib/mysql
         environment:
             - MYSQL_ALLOW_EMPTY_PASSWORD=yes
             - MYSQL_ROOT_PASSWORD=
-            - MYSQL_DATABASE=jabiru
-            - MYSQL_USER=jabiru
+            - MYSQL_DATABASE=gottsteinsaunas
+            - MYSQL_USER=gottsteinsaunas
             - MYSQL_PASSWORD=secret
         ports:
-            - 33076:3306
+            - 33806:3306
         restart: always
         networks:
-            - jabirucms-net
+            - gottstein-net
 
-    jabirucms-php:
+    gottstein-php:
         build:
             context: .
             dockerfile: .docker/php/Dockerfile
-        container_name: jabirucms-php
+        container_name: gottstein-php
         volumes:
             - .:/var/www
             - ~/.ssh:/root/.ssh
         ports:
-            - "8760:80"
+            - "8860:80"
         networks:
-            - jabirucms-net
+            - gottstein-net
 
-    jabirucms-redis:
+    gottstein-redis:
         image: redis:latest
-        container_name: jabirucms-redis
+        container_name: gottstein-redis
         networks:
-            - jabirucms-net
+            - gottstein-net
 
-    jabirucms-mail:
+    gottstein-mail:
         image: mailhog/mailhog
-        container_name: jabirucms-mail
+        container_name: gottstein-mail
         ports:
-            - 8761:8025
+            - 8861:8025
         networks:
-            - jabirucms-net
+            - gottstein-net
 
 networks:
-    jabirucms-net:
-        name: jabirucms-net
+    gottstein-net:
+        name: gottstein-net
 
