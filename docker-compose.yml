@@ -3,9 +3,8 @@ services:
 
     jabirucms-mysql:
         image: mysql:8.0
-        # volumes:
-        #    - .docker/data/mysql/b2b:/docker-entrypoint-initdb.d
-        #      - .docker/data/mysql/b2b:/var/lib/mysql
+        volumes:
+            - .docker/data/mysql:/var/lib/mysql
         environment:
             - MYSQL_ALLOW_EMPTY_PASSWORD=yes
             - MYSQL_ROOT_PASSWORD=
