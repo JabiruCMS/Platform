@@ -2236,12 +2236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JabiruCMS/AdminLTE.git",
-                "reference": "859900b5a713ab02e27cbaa7e8a4a9ed4889a1db"
+                "reference": "0acbc2238c766f1835c98adbeccae613fb151099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JabiruCMS/AdminLTE/zipball/859900b5a713ab02e27cbaa7e8a4a9ed4889a1db",
-                "reference": "859900b5a713ab02e27cbaa7e8a4a9ed4889a1db",
+                "url": "https://api.github.com/repos/JabiruCMS/AdminLTE/zipball/0acbc2238c766f1835c98adbeccae613fb151099",
+                "reference": "0acbc2238c766f1835c98adbeccae613fb151099",
                 "shasum": ""
             },
             "require": {
@@ -2279,7 +2279,7 @@
             "support": {
                 "source": "https://github.com/JabiruCMS/AdminLTE/tree/master"
             },
-            "time": "2022-06-15T07:43:27+00:00"
+            "time": "2022-08-09T04:46:11+00:00"
         },
         {
             "name": "jabirucms/core-module",
@@ -10708,16 +10708,16 @@
         },
         {
             "name": "spatie/flare-client-php",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/flare-client-php.git",
-                "reference": "86a380f5b1ce839af04a08f1c8f2697184cdf23f"
+                "reference": "b1b974348750925b717fa8c8b97a0db0d1aa40ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/86a380f5b1ce839af04a08f1c8f2697184cdf23f",
-                "reference": "86a380f5b1ce839af04a08f1c8f2697184cdf23f",
+                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/b1b974348750925b717fa8c8b97a0db0d1aa40ca",
+                "reference": "b1b974348750925b717fa8c8b97a0db0d1aa40ca",
                 "shasum": ""
             },
             "require": {
@@ -10765,7 +10765,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flare-client-php/issues",
-                "source": "https://github.com/spatie/flare-client-php/tree/1.2.0"
+                "source": "https://github.com/spatie/flare-client-php/tree/1.3.0"
             },
             "funding": [
                 {
@@ -10773,7 +10773,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-16T12:13:39+00:00"
+            "time": "2022-08-08T10:10:20+00:00"
         },
         {
             "name": "spatie/ignition",
