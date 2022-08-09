@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd6005d5f029c84ebb3d4e5768d63a8e",
+    "content-hash": "beac96356a8be3da290530e5a8742aae",
     "packages": [
         {
             "name": "asgardcms/blog-module",
@@ -2665,12 +2665,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JabiruCMS/Page.git",
-                "reference": "e3a325ac0a0eaf3dcfe440d6bf5ba2bf7600c00d"
+                "reference": "7d3295b1e7c94547bb68f1dee2695dd4a11bde1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JabiruCMS/Page/zipball/e3a325ac0a0eaf3dcfe440d6bf5ba2bf7600c00d",
-                "reference": "e3a325ac0a0eaf3dcfe440d6bf5ba2bf7600c00d",
+                "url": "https://api.github.com/repos/JabiruCMS/Page/zipball/7d3295b1e7c94547bb68f1dee2695dd4a11bde1b",
+                "reference": "7d3295b1e7c94547bb68f1dee2695dd4a11bde1b",
                 "shasum": ""
             },
             "require": {
@@ -2713,7 +2713,7 @@
                 "issues": "https://github.com/AsgardCms/Page/issues",
                 "source": "https://github.com/AsgardCms/Page"
             },
-            "time": "2022-05-18T17:55:39+00:00"
+            "time": "2022-08-09T05:14:19+00:00"
         },
         {
             "name": "jabirucms/setting-module",
