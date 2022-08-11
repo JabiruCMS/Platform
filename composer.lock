@@ -383,7 +383,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:bociancz/gottsteinsaunas-theme.git",
-                "reference": "76c5754c30c334b8d7e50403530f503c6f8405ae"
+                "reference": "0b51851979b06056b32b6998e5e2c256893c39d8"
             },
             "default-branch": true,
             "type": "asgard-theme",
@@ -403,7 +403,7 @@
                 }
             ],
             "description": "Frontend theme for GottsteinSaunas",
-            "time": "2022-08-11T04:01:22+00:00"
+            "time": "2022-08-11T04:32:59+00:00"
         },
         {
             "name": "bociancz/postal-module",
