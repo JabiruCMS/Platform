@@ -3,7 +3,7 @@
 COMPOSE="/usr/local/bin/docker-compose-1.29"
 #COMPOSE="docker-compose"
 #COMPOSE="docker compose"
-APP_CONTAINER="jabirucms-php"
+APP_CONTAINER="gottstein-php"
 
 if [ $# -gt 0 ]; then
     if [ "$1" == "build" ]; then
