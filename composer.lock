@@ -383,7 +383,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:bociancz/gottsteinsaunas-theme.git",
-                "reference": "0b51851979b06056b32b6998e5e2c256893c39d8"
+                "reference": "e8d8908f5f84c70f7547cc6e8f1b0e077560620a"
             },
             "default-branch": true,
             "type": "asgard-theme",
@@ -403,7 +403,7 @@
                 }
             ],
             "description": "Frontend theme for GottsteinSaunas",
-            "time": "2022-08-11T04:32:59+00:00"
+            "time": "2022-08-12T06:21:42+00:00"
         },
         {
             "name": "bociancz/postal-module",
@@ -546,7 +546,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:bociancz/gottsteinsaunas-module.git",
-                "reference": "d013ddb2a06b5f69075a6caea67c9acf5dca3088"
+                "reference": "70121499fc6714c99a6ad7752da6c31fecbb387b"
             },
             "require": {
                 "php": ">=7.2"
@@ -574,7 +574,7 @@
                     "email": "info@bocian.cz"
                 }
             ],
-            "time": "2022-08-11T04:25:31+00:00"
+            "time": "2022-08-12T06:25:16+00:00"
         },
         {
             "name": "brick/math",

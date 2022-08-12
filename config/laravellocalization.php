@@ -32,5 +32,4 @@ return [
     // Because of this language negotiation using the Accept-Language header will NEVER occur when hideDefaultLocaleInURL is true.
     //
     'hideDefaultLocaleInURL' => false,
-
 ];
