@@ -24,4 +24,5 @@ Currently, not all modules that are used by the platform are public. Currently i
 * run `./dcp artisan module:migrate`
 * run `./dcp artisan asgard:install` and follow prompts
 * make sure `INSTALLED=true` is in the `.env` file
+* run `./dcp artisan module:publish`
 * application should now run on port that is defined in `docker-compose.yaml` , currently `http://127.0.0.1:8760/`  
