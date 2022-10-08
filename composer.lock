@@ -2540,12 +2540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JabiruCMS/Media.git",
-                "reference": "0891103d753ccfca3dc47a10fea07c4831268d91"
+                "reference": "6f1fa1fb19ff932dea8259f18a14f1ffb4683fcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JabiruCMS/Media/zipball/0891103d753ccfca3dc47a10fea07c4831268d91",
-                "reference": "0891103d753ccfca3dc47a10fea07c4831268d91",
+                "url": "https://api.github.com/repos/JabiruCMS/Media/zipball/6f1fa1fb19ff932dea8259f18a14f1ffb4683fcf",
+                "reference": "6f1fa1fb19ff932dea8259f18a14f1ffb4683fcf",
                 "shasum": ""
             },
             "require": {
@@ -2598,7 +2598,7 @@
                 "issues": "https://github.com/AsgardCms/Platform/issues",
                 "source": "https://github.com/AsgardCms/Media"
             },
-            "time": "2022-09-05T19:02:21+00:00"
+            "time": "2022-10-08T03:51:14+00:00"
         },
         {
             "name": "jabirucms/menu-module",
