@@ -2945,12 +2945,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JabiruCMS/User.git",
-                "reference": "a2a406d46d48fdbe321941f8d65ec8a494dced7b"
+                "reference": "75c455a2f0e924cc82debfdfa0c01717de61c997"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JabiruCMS/User/zipball/a2a406d46d48fdbe321941f8d65ec8a494dced7b",
-                "reference": "a2a406d46d48fdbe321941f8d65ec8a494dced7b",
+                "url": "https://api.github.com/repos/JabiruCMS/User/zipball/75c455a2f0e924cc82debfdfa0c01717de61c997",
+                "reference": "75c455a2f0e924cc82debfdfa0c01717de61c997",
                 "shasum": ""
             },
             "require": {
@@ -3004,7 +3004,7 @@
                 "issues": "https://github.com/AsgardCms/Platform/issues",
                 "source": "https://github.com/AsgardCms/User"
             },
-            "time": "2022-05-18T17:47:17+00:00"
+            "time": "2022-10-08T03:29:40+00:00"
         },
         {
             "name": "jabirucms/workshop-module",

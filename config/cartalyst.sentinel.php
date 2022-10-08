@@ -94,8 +94,12 @@ return [
     */
 
     'permissions' => [
+        // if at least one role has access to the permission, ALLOW
+        'class' => \Modules\User\Services\LoosePermissions::class,
 
-        'class' => 'Cartalyst\Sentinel\Permissions\StandardPermissions',
+        // if at least one role denies the permissions, DENY
+        // 'class' => 'Cartalyst\Sentinel\Permissions\StandardPermissions',
+        // 'class' => 'Cartalyst\Sentinel\Permissions\StrictPermissions',
 
     ],
 
