@@ -35,23 +35,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# add root to www group
-RUN chmod -R +x /var/www/
-RUN chmod 777 -R /var/log/
-RUN chmod 777 -R /var/www/logs/
-RUN chmod 777 -R /var/www/storage/
-
-# Copy nginx/php/supervisor configs
-RUN cp .docker/supervisor/default.conf /etc/supervisord.conf
-RUN cp .docker/php/php_custom.ini /usr/local/etc/php/conf.d/app.ini
-RUN cp .docker/nginx/default.conf /etc/nginx/sites-enabled/default
-
 # PHP Error Log Files
 RUN mkdir /var/log/php
 RUN touch /var/log/php/errors.log && chmod 777 /var/log/php/errors.log
-
-# Deployment steps
-RUN chmod +x /var/www/.docker/run.sh
 
 EXPOSE 80
 ENTRYPOINT ["bash","/var/www/.docker/run.sh"]
