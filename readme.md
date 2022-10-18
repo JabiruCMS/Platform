@@ -22,7 +22,7 @@ Currently, not all modules that are used by the platform are public. Currently i
 * run `./dcp build` to make sure the containers will be built with the most up-to-date config (in some cases you can run `./dcp up` instead if you know for sure there were no docker config changes since the last time)
 * run `./dcp artisan migrate`
 * run `./dcp artisan module:migrate`
-* run `./dcp artisan asgard:install -f` and follow prompts
+* run `./dcp artisan asgard:simple-install` and follow prompts
 * put `INSTALLED=true` in the `.env` file if it's not there yet
 * run `./dcp artisan module:publish`
 * application should now run on port that is defined in `docker-compose.yaml` , currently `http://127.0.0.1:8760/`  
