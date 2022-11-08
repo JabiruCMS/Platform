@@ -13,7 +13,7 @@ return [
     | Define which route to redirect to after a successful login
     |--------------------------------------------------------------------------
     */
-    'redirect_route_after_login' => 'homepage',
+    'redirect_route_after_login' => 'dashboard.index',
     /*
     |--------------------------------------------------------------------------
     | Define which route the user should be redirected to after accessing
@@ -41,7 +41,7 @@ return [
     | Allow anonymous user registration
     |--------------------------------------------------------------------------
     */
-    'allow_user_registration' => true,
+    'allow_user_registration' => false,
     /*
     |--------------------------------------------------------------------------
     | The default role for new user registrations
