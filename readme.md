@@ -4,7 +4,7 @@ This is a fork AsgardCMS platform, an excellent modular CMS that was built on th
 
 ## Differences vs AsgardCMS
 
-The original CMS was fully modular in the initial versions, but later moved to monorepo pattern with all modules included. Modules were still extracted using subtree split into individual repositories, however it made contributing to individual modules outside of the platform much more complicated. JabiruCMS returns back to the original concept, where each module has it's own standalone repository and is no longer part of the Platform repository.
+The original CMS was fully modular in the initial versions, but later moved to monorepo pattern with all modules included. Modules were still extracted using subtree split into individual repositories, however it made contributing to individual modules outside of the platform much more complicated. JabiruCMS returns back to the original concept, where each module has its own standalone repository and is no longer part of the Platform repository.
 
 ## Versioning
 
@@ -12,7 +12,7 @@ I am not 100% sure that I will be able to use SemVer for the new releases (proba
 
 ## Modules and module development
 
-Currently, not all modules that are used by the platform are public. Currently it is the case for `bocian`, `catalog`, `stock`, `eshop` and `postal` modules. You can use the platform without them, as they are not required for the platform to run. In order to do so, first clone the repository and then remove these modules from the require section in `composer.json`
+Currently, not all modules that are used by the platform are public. Currently, it is the case for `bocian`, `catalog`, `stock`, `eshop` and `postal` modules. You can use the platform without them, as they are not required for the platform to run. In order to do so, first clone the repository and then remove these modules from the require section in `composer.json`
 
 ## Installation
 
@@ -25,7 +25,7 @@ Currently, not all modules that are used by the platform are public. Currently i
 * run `./dcp artisan asgard:simple-install` and follow prompts
 * put `INSTALLED=true` in the `.env` file if it's not there yet
 * run `./dcp artisan module:publish`
-* application should now run on port that is defined in `docker-compose.yaml` , currently `http://127.0.0.1:8760/`  
+* application should now run on port that is defined in `docker-compose.yaml`   
 * make sure `storage` folder is writeable (run `chmod -R 777 storage`)
 * clear all cache
   * `./dcp artisan cache:clear`
