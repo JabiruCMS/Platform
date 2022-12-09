@@ -3,6 +3,7 @@ services:
 
     jabirucms-mysql:
         image: mysql:8.0
+        container_name: jabirucms-mysql
         volumes:
             - .docker/data/mysql:/var/lib/mysql
         environment:
