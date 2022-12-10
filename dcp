@@ -1,9 +1,27 @@
 #!/bin/bash
 
-COMPOSE="/usr/local/bin/docker-compose-1.29"
-#COMPOSE="docker-compose"
-#COMPOSE="docker compose"
-APP_CONTAINER="jabirucms-php"
+if docker-compose &> /dev/null; then
+    COMPOSE=docker-compose
+elif docker compose &> /dev/null; then
+    COMPOSE="docker compose"
+elif /usr/local/bin/docker-compose-1.29 &> /dev/null ; then
+    COMPOSE="/usr/local/bin/docker-compose-1.29"
+else
+    echo "Docker Compose does not seem to be installed. Aborting ..."
+    exit 1;
+fi
+
+CONTAINER_LINE=$(grep -E -i 'container_name:(.*)php' docker-compose.yml)
+APP_CONTAINER=${CONTAINER_LINE/container_name: /}
+# IF app container detection does not work, you can uncomment the line below and put it there directly
+# APP_CONTAINER=
+
+if [ -z "$APP_CONTAINER" ]; then
+    echo "App container not found. Aborting ...";
+    exit 1
+fi
+
+echo Using ${COMPOSE} on container "${APP_CONTAINER}"
 
 if [ $# -gt 0 ]; then
     if [ "$1" == "build" ]; then
