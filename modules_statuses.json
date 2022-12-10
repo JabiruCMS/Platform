@@ -15,5 +15,6 @@
     "Gallery": true,
     "Slider": true,
     "Stock": true,
-    "Blog": true
+    "Blog": true,
+    "Contact": true
 }
