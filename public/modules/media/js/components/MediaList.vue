@@ -46,9 +46,20 @@
                                 </el-breadcrumb>
                             </el-col>
                         </el-row>
+
+                        <el-table
+                            v-if="tableIsLoading"
+                            v-loading.body="tableIsLoading"
+                        >
+                            <el-table-column type="selection" width="55"></el-table-column>
+                            <el-table-column label="" width="150"></el-table-column>
+                            <el-table-column label=""></el-table-column>
+                            <el-table-column label=""></el-table-column>
+                        </el-table>
                         <el-table
                             ref="mediaTable"
                             v-loading.body="tableIsLoading"
+                            v-if="tableIsLoading === false"
                             :data="media"
                             stripe
                             style="width: 100%"
@@ -57,7 +68,9 @@
                         >
                             <el-table-column type="selection" width="55"></el-table-column>
                             <el-table-column label="" width="150">
+
                                 <template slot-scope="scope">
+
                                     <template v-if="scope.row.is_image">
                                         <img :src="scope.row.small_thumb" alt="" class="img-responsive">
                                     </template>
@@ -169,6 +182,7 @@
         watch: {
             '$route': 'fetchMediaData',
         },
+
         mounted() {
             if (window.AsgardCMS.filesystem === 's3') {
                 this.canEditFolders = false;
@@ -203,7 +217,10 @@
                     folder_id: this.folderId,
                 };
 
-                axios.get(route('api.media.all-vue', { ...properties, ...customProperties }))
+                const allProperties = { ...properties, ...customProperties };
+                this.folderId = parseInt(allProperties.folder_id);
+
+                axios.get(route('api.media.all-vue', allProperties))
                     .then((response) => {
                         this.tableIsLoading = false;
                         this.media = response.data.data;
@@ -211,6 +228,7 @@
                         this.links = response.data.links;
                         this.order_meta.order_by = properties.order_by;
                         this.order_meta.order = properties.order;
+
                     });
             },
             fetchMediaData() {
@@ -281,6 +299,9 @@
                 this.$events.emit('moveMediaWasClicked', this.selectedMedia);
             },
             changeRoot(folderId) {
+                if (folderId == this.folderId) {
+                    return;
+                }
                 this.tableIsLoading = true;
                 this.folderId = folderId;
                 if (folderId === 0) {
