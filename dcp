@@ -27,7 +27,8 @@ if [ $# -gt 0 ]; then
     if [ "$1" == "build" ]; then
         $COMPOSE up --build
     elif [ "$1" == "up" ]; then
-        $COMPOSE up
+        shift 1
+        $COMPOSE up $@
     elif [ "$1" == "reload" ] || [ "$1" == "restart" ] || [ "$1" == "rs" ] || [ "$1" == "rl" ]; then
         $COMPOSE down && $COMPOSE up -d
     elif [ "$1" == "artisan" ] || [ "$1" == "art" ] || [ "$1" == "a" ]; then
