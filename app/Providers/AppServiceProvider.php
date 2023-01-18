@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -31,5 +32,9 @@ class AppServiceProvider extends ServiceProvider
         Carbon::serializeUsing(function (Carbon $carbon) {
             return $carbon->format('d/m/y H:i:s');
         });
+
+        if (env('APP_FORCE_HTTPS', false)) {
+            URL::forceScheme('https');
+        }
     }
 }
